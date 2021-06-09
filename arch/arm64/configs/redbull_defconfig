@@ -1,11 +1,8 @@
 #
 # Automatically generated file; DO NOT EDIT.
-# Linux/arm64 4.19.110 Kernel Configuration
+# Linux/arm64 4.19.160 Kernel Configuration
 #
 
-#
-# Compiler: Proton clang version 12.0.0 (https://github.com/llvm/llvm-project e03ba2198dbb6b053f600c798770593d8f69055d)
-#
 CONFIG_GCC_VERSION=0
 CONFIG_CC_IS_CLANG=y
 CONFIG_CLANG_VERSION=120000
@@ -4808,9 +4805,11 @@ CONFIG_DEFAULT_SECURITY="selinux"
 #
 # Memory initialization
 #
-CONFIG_CC_HAS_AUTO_VAR_INIT=y
+CONFIG_CC_HAS_AUTO_VAR_INIT_PATTERN=y
+CONFIG_CC_HAS_AUTO_VAR_INIT_ZERO=y
 # CONFIG_INIT_STACK_NONE is not set
-CONFIG_INIT_STACK_ALL=y
+# CONFIG_INIT_STACK_ALL_PATTERN is not set
+CONFIG_INIT_STACK_ALL_ZERO=y
 CONFIG_INIT_ON_ALLOC_DEFAULT_ON=y
 # CONFIG_INIT_ON_FREE_DEFAULT_ON is not set
 CONFIG_CRYPTO=y
